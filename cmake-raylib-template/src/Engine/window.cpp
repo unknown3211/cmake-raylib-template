@@ -18,7 +18,6 @@ void Window::Update(void(*update)())
 	while (!WindowShouldClose())
 	{
 		BeginDrawing();
-		ClearBackground(BLACK);
 		update();
 		DrawFPS(10, 10);
 		EndDrawing();
